@@ -28,14 +28,14 @@ To install the Laravel live templates all you need to do is copy Laravel.xml and
 
 #### Laravel Bootstrap fields - Generates a Div which contains a label and the field you requested
 Example
-[code]
+```php
 <!-- username Form Input  -->
 <div class="form-group">
     {{ Form::label('username','Username:') }}
     {{ Form::text('username', null, ['class' => 'form-control']) }}
     {{$errors->first('username','<span class="danger">:message</span>')}}
 </div>
-[/code]
+```
 - `checkboxfield`  
 - `emailfield`
 - `filefield`
