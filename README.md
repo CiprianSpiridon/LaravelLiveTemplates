@@ -1,4 +1,4 @@
-LaravelLiveTemplates
+Laravel Live Templates
 ====================
 To install the Laravel live templates all you need to do is copy Laravel.xml and Envoy.xml files to your IntelliJ/PhpStorm templates directory as defined below:
 ### IntelliJ
