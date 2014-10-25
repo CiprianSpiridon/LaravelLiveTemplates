@@ -26,6 +26,23 @@ To install the Laravel live templates all you need to do is copy Laravel.xml and
 - `l:r:a`  Route::any()
 - `l:r:b`  Route::bind()
 
+#### Laravel Form
+- `Form::checkbox` Generate a Checkbox element (name, value, checked, attributes)
+- `Form::email` Generate an Email Input element (name, default, attributes)
+- `Form::input` Generate a File Input element (name, attributes)
+- `Form::label` Generate a Label element
+- `Form::macro` Generate a Form Macro
+- `Form::model` Open a Form with Model Binding
+- `Form::open` Open a Form
+- `Form::openWithFileUpload` Open a Form and Enable File Upload
+- `Form::password` Generate a Password Input element (name, attributes)
+- `Form::radio` Generate a Radio element (name, value, checked, attributes)
+- `Form::select` Generate a Drop-down list (name, array of options, default, attributes)
+- `Form::selectMonth` Generate a Drop-down list with Months (name, default, attributes)
+- `Form::selectRange` Generate a Drop-down list with Range (name, from, to, default, attributes)
+- `Form::submit` Generate a Submit button (value, attributes)
+- `Form::text` Generate a Text Input element (name, default, attributes)
+
 #### Laravel Bootstrap fields - Generates a Div which contains a label and the field you requested
 Example
 ```php
