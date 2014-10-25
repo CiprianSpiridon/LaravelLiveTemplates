@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Laravel_Clases">
+  <template name="l:c" value="&#10;class $CONTROLLER$ extends \BaseController {&#10;&#10;&#9;/**&#10;&#9; * Display a listing of the resource.&#10;&#9; *&#10;&#9; * @return Response&#10;&#9; */&#10;&#9;public function index()&#10;&#9;{&#10;&#9;&#9;//&#10;&#9;}&#10;&#10;&#9;/**&#10;&#9; * Show the form for creating a new resource.&#10;&#9; *&#10;&#9; * @return Response&#10;&#9; */&#10;&#9;public function create()&#10;&#9;{&#10;&#9;&#9;//&#10;&#9;}&#10;&#10;&#9;/**&#10;&#9; * Store a newly created resource in storage.&#10;&#9; *&#10;&#9; * @return Response&#10;&#9; */&#10;&#9;public function store()&#10;&#9;{&#10;&#9;&#9;//&#10;&#9;}&#10;&#10;&#9;/**&#10;&#9; * Display the specified resource.&#10;&#9; *&#10;&#9; * @param  int  &#10;&#9; * @return Response&#10;&#9; */&#10;&#9;public function show()&#10;&#9;{&#10;&#9;&#9;//&#10;&#9;}&#10;&#10;&#9;/**&#10;&#9; * Show the form for editing the specified resource.&#10;&#9; *&#10;&#9; * @param  int  &#10;&#9; * @return Response&#10;&#9; */&#10;&#9;public function edit()&#10;&#9;{&#10;&#9;&#9;//&#10;&#9;}&#10;&#10;&#9;/**&#10;&#9; * Update the specified resource in storage.&#10;&#9; *&#10;&#9; * @param  int  &#10;&#9; * @return Response&#10;&#9; */&#10;&#9;public function update()&#10;&#9;{&#10;&#9;&#9;//&#10;&#9;}&#10;&#10;&#9;/**&#10;&#9; * Remove the specified resource from storage.&#10;&#9; *&#10;&#9; * @param  int  &#10;&#9; * @return Response&#10;&#9; */&#10;&#9;public function destroy()&#10;&#9;{&#10;&#9;&#9;//&#10;&#9;}&#10;}$END$" description="create Laravel controller" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTROLLER" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="l:v" value="use Laracasts\Validation\FormValidator;&#10;&#10;&#10;class $NAME$  extends FormValidator {&#10;     /**&#10;     * Rules &#10;     * @var array&#10;     */&#10;    protected $$rules = [$RULES$];&#10;&#10;}&#10;$END$" description="Laravel Validator" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RULES" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="l:m" value="class $NAME$ extends \Eloquent&#10;{&#10;     protected $$fillable = [];&#10;&#10;    /**&#10;     * The database table used by the model.&#10;     *&#10;     * @var string&#10;     */&#10;    protected $$table = '$TABLE$';&#10;&#10;    /**&#10;     * The attributes excluded from the model's JSON form.&#10;     *&#10;     * @var array&#10;     */&#10;    protected $$hidden = array();&#10;}$END$" description="create laravel model" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="decapitalize(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
+

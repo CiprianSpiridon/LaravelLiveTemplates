@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Laravel_Boostrap_Fields">
-  <template name="textfield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::text('$NAME$', null, ['class' =&gt; 'form-control']) }}&#10;    {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;" description="Form Text Field" toReformat="true" toShortenFQNames="true">
+  <template name="textfield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::text('$NAME$', null, ['class' =&gt; 'form-control']) }}&#10;    {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;$END$" description="Form Text Field" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -9,7 +9,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="passwordfield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::password('$NAME$',['class' =&gt; 'form-control']) }}&#10;    {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;" description="Form Password Field" toReformat="true" toShortenFQNames="true">
+  <template name="passwordfield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::password('$NAME$',['class' =&gt; 'form-control']) }}&#10;    {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;$END$" description="Form Password Field" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -18,7 +18,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="textareafield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::textarea('$NAME$', null, ['class' =&gt; 'form-control']) }}&#10;    {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;" description="Form Textarea filed" toReformat="true" toShortenFQNames="true">
+  <template name="textareafield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::textarea('$NAME$', null, ['class' =&gt; 'form-control']) }}&#10;    {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;$END$" description="Form Textarea filed" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -27,7 +27,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="checkboxfield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::checkbox('$NAME$', ['class' =&gt; 'form-control']) }}&#10;     {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;" description="Form Checkbox Field" toReformat="true" toShortenFQNames="true">
+  <template name="checkboxfield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::checkbox('$NAME$', ['class' =&gt; 'form-control']) }}&#10;     {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;$END$" description="Form Checkbox Field" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -36,7 +36,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="filefield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10; &lt;div class=&quot;form-group&quot;&gt;&#10;   {{ Form::label('$NAME$', '$VALUE$',['class'=&gt;'control-label']) }}&#10;   {{ Form::file('$NAME$',null,['class'=&gt;'form-control']) }}&#10;   {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;" description="Form File Field" toReformat="true" toShortenFQNames="true">
+  <template name="filefield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10; &lt;div class=&quot;form-group&quot;&gt;&#10;   {{ Form::label('$NAME$', '$VALUE$',['class'=&gt;'control-label']) }}&#10;   {{ Form::file('$NAME$',null,['class'=&gt;'form-control']) }}&#10;   {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;$END$" description="Form File Field" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -45,8 +45,43 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="submitbutton" value=" &lt;!-- $NAME$ Form Input  --&gt;&#10; &lt;div class=&quot;form-group&quot;&gt;&#10;   {{ Form::submit('$NAME$',['class'=&gt;'btn btn-primary']) }}&#10;&lt;/div&gt;" description="Form Submit Button" toReformat="true" toShortenFQNames="true">
+  <template name="submitbutton" value=" &lt;!-- $NAME$ Form Input  --&gt;&#10; &lt;div class=&quot;form-group&quot;&gt;&#10;   {{ Form::submit('$NAME$',['class'=&gt;'btn btn-primary']) }}&#10;&lt;/div&gt;$END$" description="Form Submit Button" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="selectfield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$', '$VALUE$',['class'=&gt;'control-label']) }}&#10;    {{ Form::select('$NAME$', $LIST$ $DEFAULT$ $OPTION$) }}&#10;    {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;    &#10;$END$&#10;    " description="Generate a Drop-down list (name, array of options, default, attributes)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="LIST" expression="" defaultValue="&quot;$array&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;, null&quot;" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="radiofield" value="!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::radio('$NAME$', '$DEFAULT$', $CHECKED$ ['id' =&gt; '$ID$']) }}&#10;    {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;$END$" description="Generate a Radio element (name, value, checked, attributes)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="CHECKED" expression="enum(&quot;null, &quot;, &quot;true, &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="NAME" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="emailfield" value="&lt;!-- $NAME$ Form Input  --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$','$VALUE$:') }}&#10;    {{ Form::email('$NAME$', '$DEFAULT$'$OPTION$) }}&#10;    {{$errors-&gt;first('$NAME$','&lt;span class=&quot;danger&quot;&gt;:message&lt;/span&gt;')}}&#10;&lt;/div&gt;$END$" description="Generate an Email Input element (name, default, attributes)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;email&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
