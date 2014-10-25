@@ -44,7 +44,7 @@ To install the Laravel live templates all you need to do is copy Laravel.xml and
 - `Form::text` Generate a Text Input element (name, default, attributes)
 
 #### Laravel Bootstrap fields - Generates a Div which contains a label and the field you requested
-Example
+Example for `textfield`
 ```php
 <!-- username Form Input  -->
 <div class="form-group">
