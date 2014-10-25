@@ -1,2 +1,2 @@
-laravelLiveTemplates
+LaravelLiveTemplates
 ====================
