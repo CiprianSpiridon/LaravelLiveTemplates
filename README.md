@@ -12,11 +12,14 @@ To install the Laravel live templates all you need to do is copy Laravel.xml and
     Windows <User home>\.WebIde80\config\templates
     Linux ~/.WebIde80/config/templates
     Mac OS ~/Library/Preferences/WebIde80/templates
-    
+
+#### Classes
+- `l:c` Laravel Controller
+- `l:m` Laravel Model
+- `l:v` Laravel Validator
+ 
 #### Routes
-- `l:r:a` Route::any()
-- `l:r:b` Route::bind()
 - `l:r:g` Route::get()
-- `l:r:m` Route::model()
 - `l:r:p` Route::post()
 - `l:r:r` Route::resource()
+- `l:r:gr` Route::group()
